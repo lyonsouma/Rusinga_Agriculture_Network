@@ -1,0 +1,169 @@
+/* About Section */
+.about {
+    padding: 60px 30px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about h5 {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Vision Section */
+.vision-section {
+    background-color: #e9f7f1;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .vision-section h3 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-top: 20px;
+  }
+  
+  .vision-icon {
+    width: 80px;
+    margin-top: 20px;
+  }
+  
+  .vision-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  
+  /* Mission Section */
+.mission-section {
+    padding: 60px 30px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  .mission-section h3 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-top: 20px;
+  }
+  
+  .mission-icon {
+    width: 80px;
+    margin-top: 20px;
+  }
+  
+  .mission-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+
+  /* Values Section */
+.values-section {
+    padding: 60px 30px;
+    background-color: #f9f9f9;
+  }
+  
+  .values-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .value-item {
+    width: 250px;
+    text-align: center;
+  }
+  
+  .value-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .value-item h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .value-item p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  /* Farm Highlights Section */
+.highlights-section {
+    padding: 60px 30px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .highlight-item {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+  }
+  
+  .highlight-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .highlight-item h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .highlight-item p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+
+  /* Team Section */
+.team-section {
+    padding: 60px 30px;
+    background-color: #f4f4f4;
+  }
+  
+  .team-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    width: 250px;
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member h4 {
+    font-size: 1.5rem;
+  }
+  
+  .team-member h6 {
+    color: #6c757d;
+  }
+  

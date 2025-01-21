@@ -1,0 +1,88 @@
+/* Contact Section */
+.contact-form {
+  padding: 60px 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1d2b64;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.contact-form .form-control {
+  margin-top: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.contact-form .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.contact-form .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form .btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #218838;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  text-align: center;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 40px 20px;
+  }
+
+  .contact-form h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.9rem;
+  }
+
+  .contact-form .btn {
+    font-size: 1rem;
+  }
+}

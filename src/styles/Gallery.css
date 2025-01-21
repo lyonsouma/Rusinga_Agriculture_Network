@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gallery Page */
+.gallery-page {
+  padding-top: 16vh;
+  text-align: center;
+}
+
+/* Heading and Description */
+.gallery-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Gallery Layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  height: 250px;
+  cursor: pointer;
+}
+
+/* Gallery Image Styling */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Styling */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+  .gallery-heading {
+      font-size: 2rem;
+  }
+  
+  .gallery-description {
+      font-size: 1rem;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+  flex: 1 1 calc(33.33% - 30px);  /* This ensures three items per row */
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .col-lg-4 {
+    flex: 1 1 calc(50% - 30px);  /* Two items per row on medium-sized screens */
+  }
+
+  .col-md-6 {
+    flex: 1 1 100%;  /* One item per row on smaller screens */
+  }
+}

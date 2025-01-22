@@ -1,20 +1,51 @@
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "../styles/Contact.css";
 
 const Contact = () => {
+  const [formStatus, setFormStatus] = useState(""); // To track form submission status
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+
+    // Using EmailJS to send the email
+    emailjs
+      .sendForm(
+        "service_rtexpd8", // Replace with your EmailJS service ID
+        "template_mjv3ubb", // Replace with your EmailJS template ID
+        form,
+        "qoNrvf9-jVqziMlqO" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setFormStatus("Message sent! We will respond within 24 hours.");
+          form.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          setFormStatus("There was an error sending your message. Please try again.");
+        }
+      );
+  };
+
   return (
     <div>
       {/* Contact Form Section */}
       <section className="contact-form py-5">
-        <div className="container"  style={{marginTop:'112px'}}>
+        <div className="container" style={{ marginTop: "112px" }}>
           <h3>Send Us a Message</h3>
-          <form action="#" method="POST">
+          <form onSubmit={handleSubmit} method="POST">
             <div className="form-row">
               <div className="form-group col-md-6">
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   className="form-control"
-                  id="name"
+                  id="from_name"
+                  name="from_name" // Ensure the name attribute matches your template
                   placeholder="Your Name"
                   required
                 />
@@ -25,6 +56,7 @@ const Contact = () => {
                   type="email"
                   className="form-control"
                   id="email"
+                  name="from_email" // Ensure the name attribute matches your template
                   placeholder="Your Email"
                   required
                 />
@@ -35,6 +67,7 @@ const Contact = () => {
               <textarea
                 className="form-control"
                 id="message"
+                name="message" // Ensure the name attribute matches your template
                 rows="5"
                 placeholder="Your Message"
                 required
@@ -46,6 +79,7 @@ const Contact = () => {
                 type="tel"
                 className="form-control"
                 id="phone"
+                name="phone" // Ensure the name attribute matches your template
                 placeholder="Your Phone Number"
               />
             </div>
@@ -53,9 +87,7 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-          <p className="mt-3">
-            Thank you for contacting us. We will respond within 24 hours!
-          </p>
+          {formStatus && <p className="mt-3">{formStatus}</p>} {/* Display status message */}
         </div>
       </section>
     </div>

@@ -9,18 +9,19 @@ body {
 .gallery-page {
   padding-top: 16vh;
   text-align: center;
+  background: #F4F1EA;  /* Earthy Beige background */
 }
 
 /* Heading and Description */
 .gallery-heading {
   font-size: 2.5rem;
-  color: #333;
+  color: #207a14;  /* Cool Green for heading */
   margin-bottom: 20px;
 }
 
 .gallery-description {
   font-size: 1.2rem;
-  color: #555;
+  color: #5A3825;  /* Deep Brown for description */
   margin-bottom: 40px;
 }
 
@@ -113,6 +114,7 @@ body {
       font-size: 1rem;
   }
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;

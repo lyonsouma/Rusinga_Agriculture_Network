@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import from react-router-dom
 import '../styles/Navbar.css';
 import { FaBars } from "react-icons/fa";
+import Logo from "../assets/images/Logo.png";
 
 const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -12,9 +13,14 @@ const NavBar = () => {
 
     return (
         <div className="navbar">
-            <span className='brand'>
-                Rusinga Agriculture Network
-            </span>
+            {/* Logo Image */}
+            <Link to="/" className="brand">
+                <img 
+                    src={Logo}
+                    alt="Rusinga Agriculture Network Logo" 
+                    className="logo" 
+                />
+            </Link>
 
             <div className={`navlinks ${showMenu ? 'show' : ''}`}>
                 <Link to="/">Home</Link>

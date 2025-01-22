@@ -10,9 +10,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section about">
-          <h3>Rusinga Poultry Pride</h3>
+          <h3>Rusinga Agriculture Network</h3>
           <p>
-            At Rusinga Poultry Pride, we are committed to sustainable and
+            At Rusinga Agriculture Network , we are committed to sustainable and
             quality farming practices that benefit our community and the
             environment.
           </p>
@@ -28,7 +28,13 @@ const Footer = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/team">Our Team</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
@@ -41,9 +47,7 @@ const Footer = () => {
           <ul>
             <li>
               Email:{" "}
-              <a href="mailto:info@rusinet.org">
-                rusinganework@gmail.com
-              </a>
+              <a href="mailto:info@rusinet.org">rusinganework@gmail.com</a>
             </li>
             <li>
               Phone: <a href="tel:+254111689847">+254111689847</a>
@@ -82,8 +86,8 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <h6>
-          &copy; {new Date().getFullYear()} Rusinga Agriculture Network. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Rusinga Agriculture Network. All
+          rights reserved.
         </h6>
       </div>
     </footer>

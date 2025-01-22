@@ -1,7 +1,7 @@
 /* Contact Section */
 .contact-form {
   padding: 60px 30px;
-  background-color: #f9f9f9;
+  background-color: #F4F1EA;  /* Earthy Beige */
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -9,7 +9,7 @@
 .contact-form h3 {
   font-size: 2rem;
   font-weight: bold;
-  color: #1d2b64;
+  color: #5A3825;  /* Deep Brown */
   text-align: center;
   margin-bottom: 30px;
 }
@@ -22,7 +22,7 @@
 .contact-form .form-group label {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #343a40;
+  color: #5A3825;  /* Deep Brown */
 }
 
 .contact-form .form-control {
@@ -36,7 +36,7 @@
 }
 
 .contact-form .form-control:focus {
-  border-color: #28a745;
+  border-color: #207a14;  /* Cool Green */
   box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
@@ -48,7 +48,7 @@
 .contact-form .btn {
   margin-top: 20px;
   padding: 12px 20px;
-  background-color: #28a745;
+  background-color: #207a14;  /* Cool Green */
   color: white;
   border: none;
   border-radius: 8px;
@@ -58,7 +58,7 @@
 }
 
 .contact-form .btn:hover {
-  background-color: #218838;
+  background-color: #1d6e12;  /* Darker Cool Green */
 }
 
 .contact-form p {

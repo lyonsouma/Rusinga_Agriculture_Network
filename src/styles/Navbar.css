@@ -1,112 +1,119 @@
 /* Navbar Styles */
 .navbar {
-    position: fixed;
-    left: 0;
-    z-index: 1000;
-    height: 15.8vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    padding: 0 20px; 
-  }
-  
-  .brand {
-    display: flex;
-    align-items: center;
-    color: #207a14;
-    margin-left: 20px;
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  height: 15.8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* Distribute space between logo and nav links */
+  align-items: center;
+  background-color: #F4F1EA; /* Earthy Beige */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 0 20px; 
+}
+
+/* Navbar Logo Styling */
+.brand {
+  display: flex;
+  align-items: center;
+  color: #207a14; /* Cool Green */
+  margin-left: 80px; /* Remove margin to align to the left */
+}
+
+.brand img {
+  width: 100px;  /* Adjust as needed */
+  height: auto;
+  display: inline-block;
+}
+
+/* Navlinks Styling */
+.navlinks {
+  display: flex;
+  justify-content: flex-end;  /* Align links to the right */
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  color: #5A3825; /* Deep Brown */
+  position: relative;
+}
+
+.navlinks a:hover {
+  color: #207a14; /* Cool Green */
+  cursor: pointer;
+}
+
+.navlinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #207a14;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navlinks a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Contact Button Styling */
+.navlinks .contact-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #5A3825; /* Deep Brown */
+  border: 2px solid #5A3825;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navlinks .contact-btn:hover {
+  background-color: #207a14;
+  color: white;
+  border: 2px solid #207a14;
+}
+
+/* Mobile Toggle Bar Styling */
+.toggle-bar {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 800px) {
   .navlinks {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .navlinks a {
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Times New Roman", Times, serif;
-    color: black; /* Change the link color to black */
-    position: relative;
-  }
-  
-  .navlinks a:hover {
-    color: #207a14;
-    cursor: pointer;
-  }
-  
-  .navlinks a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: #207a14;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .navlinks a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .navlinks .contact-btn {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .navlinks .contact-btn:hover {
-    background-color: #207a14;
-    color: white;
-    border: 2px solid #207a14;
-  }
-  
-  .toggle-bar {
     display: none;
-    cursor: pointer;
-    margin-right: 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F4F1EA;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
   }
-  
-  /* Responsive Design for Small Screens */
-  @media screen and (max-width: 800px) {
-    .navlinks {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Adjust this value based on your navbar height */
-        left: 0;
-        width: 100%;
-        background-color: #410909;
-        padding: 20px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        border-radius: 10px;
-    }
-  
-    .navlinks.show {
-        display: flex;
-    }
-  
-    .toggle-bar {
-        display: block;
-    }
+
+  .navlinks.show {
+    display: flex;
   }
-  
+
+  .toggle-bar {
+    display: block;
+  }
+}

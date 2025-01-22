@@ -3,10 +3,10 @@
 }
 
 .home {
-  position: relative; /* Make sure we can position the overlay inside this section */
-  background: url('../assets/images/AgricNet.jpg') center center / cover no-repeat; /* Background image */
-  background-size: cover; /* Cover the entire section */
-  background-position: center center; /* Position the image */
+  position: relative;
+  background: url('../assets/images/AgricNet.jpg') center center / cover no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 100vh;
   background-repeat: no-repeat;
   display: flex;
@@ -18,19 +18,19 @@
 
 /* Overlay between background image and text */
 .home::before {
-  content: ''; /* Creates an empty content box */
-  position: absolute; /* Position it absolutely within the .home section */
+  content: '';
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 1; /* Ensure the overlay sits between the text and the image */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .home-text {
-  position: relative; /* Position the text above the overlay */
-  z-index: 2; /* Make sure text appears on top of the overlay */
+  position: relative;
+  z-index: 2;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -42,18 +42,20 @@
 .line-two {
   font-size: 4rem;
   font-weight: bold;
-  color: #f8cdda;
+  color: #207a14; /* Cool Green */
 }
 
 .home-text p {
   margin-top: 15px;
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
   font-size: 1.2rem;
   line-height: 1.8;
+  color: #F4F1EA; /* Earthy Beige */
 }
 
 .cta-btn {
-  background-color: #279f29;
-  color: #1d2b64;
+  background-color: #207a14; /* Cool Green */
+  color: #F4F1EA; /* Earthy Beige */
   padding: 12px 25px;
   font-size: 1.1rem;
   margin-top: 20px;
@@ -63,30 +65,33 @@
 }
 
 .cta-btn:hover {
-  background-color: #00910f;
+  background-color: #5A3825; /* Deep Brown */
   color: white;
 }
 
-.section-details, .section-services {
-  background-color: #fff;
+.section-details, 
+.section-services {
+  background-color: #F4F1EA; /* Earthy Beige */
   padding: 50px 20px;
   text-align: center;
 }
 
-.section-details h2, .section-services h3 {
+.section-details h2, 
+.section-services h3 {
   font-size: 2.2rem;
-  color: #1d2b64;
+  color: #207a14; /* Cool Green */
 }
 
-.section-details p, .section-services p {
+.section-details p, 
+.section-services p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #5A3825; /* Deep Brown */
   margin-top: 10px;
 }
 
 .service-item {
-  background-color: #f8f8f8;
+  background-color: #fff;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -94,7 +99,7 @@
 }
 
 .service-item h3 {
-  color: #007bff;
+  color: #207a14; /* Cool Green */
   font-size: 1.8rem;
 }
 

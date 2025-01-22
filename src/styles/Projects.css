@@ -2,20 +2,20 @@
 .projects-page {
   padding: 80px 20px;
   text-align: center;
-  background: #f9f9f9;
+  background: #F4F1EA;  /* Earthy Beige background */
 }
 
 /* Section titles */
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #1d2b64;
+  color: #207a14;  /* Cool Green for section title */
   margin-bottom: 10px;
 }
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #555;
+  color: #5A3825;  /* Deep Brown for subtitle */
   margin-bottom: 40px;
 }
 
@@ -66,7 +66,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 123, 255, 0.85);
+  background: rgba(32, 122, 20, 0.85);  /* Cool Green overlay */
   color: #fff;
   opacity: 0;
   display: flex;
@@ -87,6 +87,7 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #5A3825;  /* Deep Brown for project title */
 }
 
 /* Project description */
@@ -94,6 +95,7 @@
   font-size: 1rem;
   margin-top: 10px;
   padding: 0 15px;
+  color: #5A3825;  /* Deep Brown for description text */
 }
 
 /* Learn More button */
@@ -111,7 +113,7 @@ button {
 
 button:hover {
   background: #fff;
-  color: #007bff;
+  color: #207a14;  /* Cool Green for hover effect */
 }
 
 /* Responsive styles */

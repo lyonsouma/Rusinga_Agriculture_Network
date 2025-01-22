@@ -1,32 +1,38 @@
-import years from "../assets/icons/calendar.png";
-import Eggs from "../assets/icons/egg.png";
+import years from "../assets/icons/fireworks.png";
+import FoodSecurity from "../assets/icons/food-safety.png";
 import "../styles/About.css";
 import mission from "../assets/icons/target.png";
 import Vision from "../assets/icons/vision.png";
-import ChickeIcon from "../assets/icons/chicken.png";
+import CropLivestock from "../assets/icons/CropLivestock.png";
 import Sustainability from "../assets/icons/planting.png";
 import Community from "../assets/icons/solidarity.png";
-import Lyons from "../assets/images/IT1.png";
-import David from "../assets/images/David.png";
-
-import Quality from "../assets/icons/service.png";
+import Quality from "../assets/icons/Quality.png";
+import Innovation from "../assets/icons/Innovation.png"
 
 const About = () => {
   return (
     <div>
       {/* About Section */}
-      <section id="about" className="about" data-aos="fade-up" >
-        <h5  style={{marginTop:'112px'}}>Empowering farmers</h5>
-        <h2>Innovative agriculture solutions</h2>
+      <section id="about" className="about" data-aos="fade-up">
+        <h5 style={{ marginTop: "112px" }}>
+          Transforming Lives Through Agriculture
+        </h5>
+        <h2>Sustainable Agriculture, Stronger Communities</h2>
         <p>
-          Rusinga Agriculture Network thrives in Nairobi, KE, specializing in
-          raising high-quality pigs and chickens. Our commitment to sustainable
-          farming practices ensures that we deliver nutritious livestock while
-          nurturing the environment. As we expand into diverse agricultural
-          ventures, we aim to empower local farmers by sharing knowledge,
-          resources, and innovative solutions that transform their farming
-          experience. Join us in cultivating a thriving agricultural community
-          that supports growth and sustainability.
+          Rusinga Agriculture Network, located in Rusinga, Homa Bay County, is
+          dedicated to improving livelihoods through sustainable agriculture,
+          climate resilience, and social empowerment. Our organization focuses
+          on enhancing food security, increasing economic opportunities, and
+          promoting climate-smart agricultural practices. We specialize in
+          poultry and livestock farming, environmental conservation, and
+          providing training and support to vulnerable groups, including women
+          and youth. Our initiatives are designed to empower local farmers with
+          the tools and knowledge needed to increase productivity, access
+          markets, and create lasting economic stability. We welcome donors and
+          partners to join us in our mission to build a thriving,
+          self-sufficient agricultural community that fosters growth,
+          innovation, and inclusivity. Together, we can cultivate a future where
+          sustainable farming transforms lives.
         </p>
       </section>
 
@@ -35,8 +41,9 @@ const About = () => {
         <img src={Vision} alt="Vision Icon" className="vision-icon" />
         <h3>Our Vision</h3>
         <p>
-          To create a sustainable, community-centered farm that supports local
-          food security and inspires responsible agricultural practices.
+          To be a leading force in sustainable agriculture, fostering food
+          security, economic empowerment, and environmental stewardship for
+          future generations.
         </p>
       </section>
 
@@ -45,9 +52,10 @@ const About = () => {
         <img src={mission} alt="Mission Icon" className="mission-icon" />
         <h3>Our Mission</h3>
         <p>
-          Every day, we strive to maintain quality care for our animals, use
-          sustainable practices, and contribute to our community by producing
-          high-quality eggs.
+          To empower communities by providing sustainable agricultural
+          solutions, fostering economic resilience, and championing
+          climate-smart practices that improve lives and protect the
+          environment.
         </p>
       </section>
 
@@ -62,16 +70,17 @@ const About = () => {
             />
             <h4>Sustainability</h4>
             <p>
-              We prioritize eco-friendly practices and resource conservation to
-              ensure a lasting impact on the environment.
+              We are committed to eco-friendly agricultural practices that
+              preserve natural resources and ensure long-term environmental
+              health.
             </p>
           </div>
           <div className="value-item" data-aos="zoom-in" data-aos-delay="200">
             <img src={Quality} alt="Quality" className="value-icon" />
             <h4>Quality</h4>
             <p>
-              We are committed to delivering the highest quality products and
-              services through attention to detail and care.
+              We strive to provide the highest quality agricultural products and
+              services that meet the needs of our community and stakeholders.
             </p>
           </div>
           <div className="value-item" data-aos="zoom-in" data-aos-delay="400">
@@ -80,18 +89,18 @@ const About = () => {
               alt="Community Support"
               className="value-icon"
             />
-            <h4>Community Support</h4>
+            <h4>Community Engagement</h4>
             <p>
-              Our farm is dedicated to strengthening the local community by
-              providing jobs, education, and fresh produce.
+              Our initiatives focus on strengthening local communities through
+              education, training, and economic opportunities.
             </p>
           </div>
           <div className="value-item" data-aos="zoom-in" data-aos-delay="600">
-            <img src={Quality} alt="Innovation" className="value-icon" />
+            <img src={Innovation} alt="Innovation" className="value-icon" />
             <h4>Innovation</h4>
             <p>
-              We embrace modern techniques and technologies to improve
-              productivity and meet evolving customer needs.
+              We leverage modern agricultural technologies to enhance
+              productivity and address the evolving challenges of food security.
             </p>
           </div>
         </div>
@@ -100,9 +109,12 @@ const About = () => {
       {/* Farm Highlights/Accomplishments Section */}
       <section className="highlights-section">
         <div className="highlight-item" data-aos="flip-left">
-          <img src={ChickeIcon} alt="Birds" className="highlight-icon" />
-          <h4>300 Birds</h4>
-          <p>We currently care for 300 healthy birds on our farm.</p>
+          <img src={CropLivestock} alt="Agriculture" className="highlight-icon" />
+          <h4>Diverse Agricultural Activities</h4>
+          <p>
+            Engaged in crop farming, livestock rearing, and climate-smart
+            agricultural practices.
+          </p>
         </div>
         <div
           className="highlight-item"
@@ -110,10 +122,10 @@ const About = () => {
           data-aos-delay="200"
         >
           <img src={years} alt="Years" className="highlight-icon" />
-          <h4>5 Years in Business</h4>
+          <h4>2+ Years of Agricultural Excellence</h4>
           <p>
-            Our farm has been operating for over 5 years, delivering fresh,
-            local eggs.
+            Over 2 years of empowering communities through sustainable
+            agriculture and food security initiatives.
           </p>
         </div>
         <div
@@ -121,25 +133,12 @@ const About = () => {
           data-aos="flip-left"
           data-aos-delay="400"
         >
-          <img src={Eggs} alt="Eggs" className="highlight-icon" />
-          <h4>5000+ Eggs Produced</h4>
-          <p>We've produced over 5000 eggs since our establishment.</p>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="team-section text-center">
-        <div className="team-content">
-          <div className="team-member" data-aos="fade-up">
-            <img src={Lyons} alt="Lyons" className="team-photo" />
-            <h4>Lyons</h4>
-            <h6>Farm Manager, overseeing daily operations.</h6>
-          </div>
-          <div className="team-member" data-aos="fade-up" data-aos-delay="200">
-            <img src={David} alt="David" className="team-photo" />
-            <h4>David Kiwago</h4>
-            <h6>Animal Care Specialist, ensuring the health of our birds.</h6>
-          </div>
+          <img src={FoodSecurity} alt="Production" className="highlight-icon" />
+          <h4>Impacting Food Security</h4>
+          <p>
+            Our programs have contributed to increased agricultural
+            productivity, benefiting countless households.
+          </p>
         </div>
       </section>
     </div>

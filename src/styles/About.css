@@ -1,169 +1,246 @@
 /* About Section */
 .about {
-    padding: 60px 30px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .about h5 {
-    font-size: 1.5rem;
-    color: #6c757d;
-  }
-  
-  .about h2 {
-    font-size: 2.5rem;
-    margin: 20px 0;
-  }
-  
-  .about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  padding: 60px 30px;
+  background-color: #F4F1EA;  /* Earthy Beige background */
+  color: #5A3825;  /* Deep Brown text */
+  text-align: center;
+}
 
-  /* Vision Section */
+.about h5 {
+  font-size: 1.5rem;
+  color: #207a14; /* Cool Green for subheading */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #207a14; /* Cool Green for heading */
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #5A3825; /* Deep Brown text */
+}
+
+/* Vision Section */
 .vision-section {
-    background-color: #e9f7f1;
-    padding: 60px 30px;
-    text-align: center;
-  }
-  
-  .vision-section h3 {
-    font-size: 2rem;
-    color: #343a40;
-    margin-top: 20px;
-  }
-  
-  .vision-icon {
-    width: 80px;
-    margin-top: 20px;
-  }
-  
-  .vision-section p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
+  background-color: #207a14; /* Cool Green background */
+  padding: 60px 30px;
+  text-align: center;
+  color: #F4F1EA; /* Earthy Beige text */
+}
 
-  
-  /* Mission Section */
+.vision-section h3 {
+  font-size: 2rem;
+  color: #F4F1EA; /* Earthy Beige text */
+  margin-top: 20px;
+}
+
+.vision-icon {
+  width: 80px;
+  margin-top: 20px;
+}
+
+.vision-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #F4F1EA; /* Earthy Beige text */
+}
+
+/* Mission Section */
 .mission-section {
-    padding: 60px 30px;
-    background-color: #f0f8ff;
-    text-align: center;
-  }
-  
-  .mission-section h3 {
-    font-size: 2rem;
-    color: #343a40;
-    margin-top: 20px;
-  }
-  
-  .mission-icon {
-    width: 80px;
-    margin-top: 20px;
-  }
-  
-  .mission-section p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
+  padding: 60px 30px;
+  background-color: #F4F1EA; /* Earthy Beige background */
+  text-align: center;
+  color: #5A3825; /* Deep Brown text */
+}
 
-  /* Values Section */
+.mission-section h3 {
+  font-size: 2rem;
+  color: #207a14; /* Cool Green for heading */
+  margin-top: 20px;
+}
+
+.mission-icon {
+  width: 80px;
+  margin-top: 20px;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #5A3825; /* Deep Brown text */
+}
+
+/* Values Section */
 .values-section {
-    padding: 60px 30px;
-    background-color: #f9f9f9;
-  }
-  
-  .values-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .value-item {
-    width: 250px;
-    text-align: center;
-  }
-  
-  .value-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .value-item h4 {
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-  
-  .value-item p {
-    font-size: 1rem;
-    color: #6c757d;
-  }
+  padding: 60px 30px;
+  background-color: #F4F1EA;  /* Earthy Beige background */
+  color: #5A3825; /* Deep Brown text */
+}
 
-  /* Farm Highlights Section */
+.values-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.value-item {
+  width: 250px;
+  text-align: center;
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.value-item h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #207a14; /* Cool Green for value headings */
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #5A3825; /* Deep Brown for description text */
+}
+
+/* Farm Highlights Section */
 .highlights-section {
-    padding: 60px 30px;
-    background-color: #e9ecef;
-    text-align: center;
-  }
-  
-  .highlight-item {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
-  }
-  
-  .highlight-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .highlight-item h4 {
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-  
-  .highlight-item p {
-    font-size: 1.1rem;
-    color: #6c757d;
+  padding: 60px 30px;
+  background-color: #207a14;  /* Cool Green background */
+  text-align: center;
+  color: #F4F1EA; /* Earthy Beige text */
+}
+
+.highlight-item {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+}
+
+.highlight-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.highlight-item h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #F4F1EA; /* Earthy Beige for heading */
+}
+
+.highlight-item p {
+  font-size: 1.1rem;
+  color: #F4F1EA; /* Earthy Beige text */
+}
+
+/* Team Section */
+.team-section {
+  padding: 60px 30px;
+  background-color: #F4F1EA;  /* Earthy Beige background */
+  color: #5A3825; /* Deep Brown text */
+}
+
+.team-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 250px;
+  text-align: center;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member h4 {
+  font-size: 1.5rem;
+  color: #207a14; /* Cool Green for team member titles */
+}
+
+.team-member h6 {
+  color: #5A3825; /* Deep Brown for roles */
+}
+
+/* General responsive fixes */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure sections don't overflow */
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Flexbox adjustments for better wrapping */
+.values-content, .team-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Ensure images resize properly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 768px) {
+  .about, .vision-section, .mission-section, .values-section, 
+  .highlights-section, .team-section {
+      padding: 40px 20px;
   }
 
-  /* Team Section */
-.team-section {
-    padding: 60px 30px;
-    background-color: #f4f4f4;
+  .value-item, .highlight-item, .team-member {
+      width: 100%;
   }
-  
-  .team-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+  .about h5 {
+      font-size: 1.3rem;
   }
-  
-  .team-member {
-    width: 250px;
-    text-align: center;
+
+  .about h2 {
+      font-size: 2rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .about h5 {
+      font-size: 1.2rem;
+  }
+
+  .about h2 {
+      font-size: 1.8rem;
+  }
+
   .team-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
   }
-  
-  .team-member h4 {
-    font-size: 1.5rem;
-  }
-  
-  .team-member h6 {
-    color: #6c757d;
-  }
-  
+}

@@ -33,16 +33,6 @@ const Home = () => {
       </section>
 
       {/* Scroll to Section */}
-      <section className="section-details" data-aos="fade-up">
-        <div className="section-content">
-          <h2>Our Mission</h2>
-          <p>
-            We aim to improve local farming systems through education,
-            innovation, and the provision of resources to farmers in Rusinga
-            Island.
-          </p>
-        </div>
-      </section>
 
       <section className="section-services" data-aos="fade-left">
         <div className="service-item">
@@ -55,8 +45,8 @@ const Home = () => {
         <div className="service-item">
           <h3>Agriculture Training</h3>
           <p>
-            Offering hands-on training to local farmers, with an emphasis on
-            new technologies and sustainable practices.
+            Offering hands-on training to local farmers, with an emphasis on new
+            technologies and sustainable practices.
           </p>
         </div>
         <div className="service-item">

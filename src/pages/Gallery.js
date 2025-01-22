@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
 import Azolla from "../assets/images/Azolla.jpg";
-import Dogs from "../assets/images/Dogs.jpg";
-import banana from "../assets/images/banana.jpg";
 import bview from "../assets/images/bview.jpeg";
 import cagefix from "../assets/images/cagefix.jpg";
 import cages from "../assets/images/cages.jpg";
@@ -13,7 +11,6 @@ import fview from "../assets/images/fview.jpg";
 import hback from "../assets/images/hback.jpg";
 import hencage from "../assets/images/hencage.jpg";
 import holes from "../assets/images/holes.jpg";
-import hyer from "../assets/images/hyer.jpg";
 import isa from "../assets/images/isa.jpg";
 import kale2 from "../assets/images/kale2.jpg";
 import kales from "../assets/images/kales.jpeg";
@@ -26,8 +23,6 @@ import '../styles/Gallery.css';
 
 const images = [
   { src: Azolla, alt: 'Azolla cultivation' },
-  { src: Dogs, alt: 'Farm guard dogs' },
-  { src: banana, alt: 'Banana plantation' },
   { src: bview, alt: 'Beautiful farm view' },
   { src: cagefix, alt: 'Cage installation' },
   { src: cages, alt: 'Layer cages' },
@@ -38,7 +33,6 @@ const images = [
   { src: hback, alt: 'Hen backyard' },
   { src: hencage, alt: 'Hen cage structure' },
   { src: holes, alt: 'Planting holes' },
-  { src: hyer, alt: 'Hybrid chickens' },
   { src: isa, alt: 'ISA Brown layers' },
   { src: kale2, alt: 'Kale farming' },
   { src: kales, alt: 'Healthy kales' },

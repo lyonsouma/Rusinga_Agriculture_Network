@@ -13,8 +13,7 @@ const Team = () => {
         <div className="container" style={{ marginTop: "112px" }}>
           <h2 className="section-title">Meet Our Team</h2>
           <p className="section-subtitle">
-            Dedicated professionals ensuring the success of Rusinga Agriculture
-            Network.
+            Dedicated professionals ensuring the success of Rusinga Agriculture Network.
           </p>
           <div className="row">
             {/* Team Member 1 */}

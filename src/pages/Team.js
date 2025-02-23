@@ -60,11 +60,11 @@ const Team = () => {
             <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
               <div className="team-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
                 <img
-                  src={Lamas}
-                  alt="Lamas Akinyi, Finance Manager"
+                  src={Faith}
+                  alt="Faith Andang'o, Finance Manager"
                   className="team-photo img-fluid rounded-circle"
                 />
-                <h4 className="team-name mt-3">Lamas Akinyi</h4>
+                <h4 className="team-name mt-3">Faith Andang'o</h4>
                 <p className="team-role">Finance Manager</p>
                 <p className="team-description">
                   Manages financial planning, budgeting, and ensures compliance with financial regulations and reporting.
@@ -92,11 +92,11 @@ const Team = () => {
             <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
               <div className="team-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
                 <img
-                  src={Faith}
-                  alt="Faith Andang'o, Communications and Public Relations Officer"
+                  src={Lamas}
+                  alt="Lamas, Communications and Public Relations Officer"
                   className="team-photo img-fluid rounded-circle"
                 />
-                <h4 className="team-name mt-3">Faith Andang'o</h4>
+                <h4 className="team-name mt-3">Lamas Akinyi</h4>
                 <p className="team-role">Communications and Public Relations Officer</p>
                 <p className="team-description">
                   Handles public relations, stakeholder engagement, branding, and community outreach.
